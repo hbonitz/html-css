@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 px;
+        }
+        header {
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+        nav{
+            background-color: rgb(66, 167, 136);
+            padding: 3px;
+            /*box-shadow: 1px 1px 20px 1px black;*/
+
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: darkgray;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnolcia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nisi blanditiis laboriosam ratione labore ipsa perferendis quod adipisci iste quasi eaque laborum tempore deleniti fuga nulla accusantium, autem dignissimos animi!</p>
+                <aside>
+                    <p>Artigo escrito por jose da silva</p>
+                </aside>
+
+
+            </article>
+            <article>
+
+
+            </article>
+
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em video</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatos Voluntário</title>
+    
+    
+    <style>
+
+        * {
+
+            font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+
+        h1 { 
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(228, 228, 228);
+        }
+
+        main {
+            background-color: whitesmoke;                       
+            margin: auto;
+            max-width: 800px; 
+            padding: 50px 30px 50px 50px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.86);    
+        }
+   
+        div#origem, div#anonimo { 
+            display: flex;                                
+            margin-bottom: 40px;
+            align-items: center;         
+                           
+        }        
+
+        div#nome, div#email, div#data, div#anv, div#os{
+            display: inline-block;            
+            margin-bottom: 40px;  
+                    
+        }
+
+       
+        .botao {            
+            width: 200px;
+            height: 50px;
+            background-color: rgb(0, 0, 110);    
+            color: whitesmoke;
+            font-weight: bold; 
+            font-size: 1.1em;
+            border:none;
+            float: right; 
+                      
+            
+        }
+
+        .botao:hover {
+            cursor: pointer; 
+            background-color: rgb(198, 193, 255) ;                      
+        }
+
+        .botao:active {
+            
+            -moz-transform: scale(0.9);
+            -webkit-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        input[type=text]:focus {        
+        background-color: rgb(235, 235, 235);
+        
+        
+        } 
+        input[type=text]{
+            border-radius: 5px;            
+            height: 30px;
+            border: solid 0.5px rgb(207, 207, 207);    
+        }       
+        
+        textarea,select {
+            border-radius: 5px;
+            border: solid 0.5px rgb(207, 207, 207);              
+        }
+        
+        textarea:focus, select:focus {
+            background-color: rgb(235, 235, 235);
+            
+            
+        }
+
+     
+    </style>
+</head>
+<body>
+    <h1>Relatos Voluntários</h1>
+    <main>
+        <form action="">
+
+            
+
+                <div id="origem">
+                    <label for="fonte" style="margin-right:5px;">Origem do Relato</label>
+                    <select name="fonte" id="fonte" style="height: 30px;">
+                        <option value="">Selecione a origem</option>
+                        <option value="interno">Interno</option>
+                        <option value="externo">Externo - Cliente</option>
+                        <option value="externo">Externo - Outros</option>
+                    </select>
+                </div>
+
+                <div id="anonimo">                    
+                    <input type="checkbox" name="anonimo" id="anonimo" style="width: 17px; height: 17px;">
+                    <label for="anonimo" style="margin-right:5px;">Relatar como anônimo</label>                
+                </div>
+
+                <div id="nome" style="margin-right: 20px;">
+                    <label for="nome" style="margin-right:5px;">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Informe seu nome" style="width: 300px; height: 30px; ">
+                </div>
+
+                <div id="email">
+                    <label for="e-mail" style="margin-right:5px;">E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="Informe seu e-mail" style="width: 300px;height: 30px;">
+                </div><br>
+            
+           
+                <div id="data" style="margin-right: 20px;">
+                    <label for="data" style="margin-right:5px;">Data da ocorrência:</label>
+                    <input type="date" name="data" id="data" style="border: solid 0.5px rgb(207, 207, 207);  width: 100px; height: 30px; border-radius: 4px;">
+                </div>
+
+                <div id="anv" style="margin-right: 20px;">
+                    <label for="anv" style="margin-right:5px;">Aeronave envolvida:</label>
+                    <input type="text" name="anv" id="anv" placeholder="XX-XXX" maxlength="6" style ="text-transform: uppercase;width:80px; border-radius: 4px; ">
+                </div>
+
+                <div id="os" >
+                    <label for="ordem" style="margin-right:5px;">Ordem de serviço:</label>
+                    <input type="text" name="ordem" id="ordem" style ="width:80px; display: inline;">
+                </div>                
+            
+                <div id="descricao">
+                    <label for="relato" style="display: block;">Descreva a ocorrência:</label>
+                    <textarea  id="relato" name="relato" style="margin-bottom: 20px; height:100px; min-height:100px; width: 90%; max-width: 90%; min-width: 30%;" placeholder="Descreva a ocorrência..."></textarea>
+                </div>
+                
+                <div id="melhoria">
+                    <label for="melhoria" style="display: block;">Sugestão de Melhoria:</label>
+                    <textarea id="melhoria" name="melhoria" style="margin-bottom: 20px; height:100px; min-height:100px; width:90%; max-width: 90%; min-width: 30%;" placeholder="Informe uma sugestão de melhoria..."></textarea>    
+                </div>
+
+            <input type="file" name="arquivo " id="arquivo">
+            
+            <input class="botao" type="submit" value="Enviar"> 
+            
+            </div>
+            
+            
+        </form>
+        
+    </main>
+</body>
+</html>

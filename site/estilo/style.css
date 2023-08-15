@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body  {      
+    background-image: url(../imagens/motorfrente.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+       
+}
