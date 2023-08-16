@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-    font-family: "Lato", sans-serif;
-    margin: 0px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        
   }
   
   /* Fixed sidenav, full height */
@@ -68,15 +73,10 @@ body {
     padding-right: 8px;
   }
   
-  /* Some media queries for responsiveness */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}  
-  }
-  
+    
   iframe {
     display: flex;
     margin: 0px;
     width: 100%;
-    height: 100vh;
+    height: 100vh;    
   }
